@@ -48,7 +48,7 @@ public class DashboardApplication {
 	@RequestMapping(value = "/api")
 	public ResponseEntity<Object> getProducts() {
 		String payload = simulateRestApiResponse();
-		//System.out.println("API Returning: " + payload);
+		System.out.println("API Returning: " + payload);
 		return new ResponseEntity<>(payload, HttpStatus.OK);
 	}
 
